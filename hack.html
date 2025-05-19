@@ -1,0 +1,90 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME</title>
+    <style>
+        .abc {
+            text-align: center;
+            background-image: url('https://media.istockphoto.com/id/1376339349/vector/vector-illustration-neon-future-game-pad-background.jpg?s=612x612&w=0&k=20&c=QeiVccr66hGsXkhafiyyk8l9spl6cb3YmBWDvKkcTFI=');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+        }
+
+        button {
+            border-width: 10px;
+            height: 60px;
+            width: 100%;
+            max-width: 300px;
+            background-color: #010029;
+            border-radius: 20px;
+            font-size: 1.5em;
+            border: solid;
+            border-image: linear-gradient(to right, Red, Orange, Yellow, Green, Blue, Indigo, Violet) 1;
+            color: white;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to top right, #00fff7, #ff00f7);
+            z-index: -1;
+        }
+
+        button:hover {
+            z-index: 0;
+            box-shadow: 25px 0 100px #e100ff, -25px 0 100px #008cff;
+        }
+
+        h1 {
+            color: aqua;
+            font-size: 2em;
+            margin-top: 20px;
+        }
+
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 3em;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            h1 {
+                font-size: 4em;
+            }
+        }
+        @media (min-width: 768px) {
+    button {
+        font-size: 1.8em;
+        padding: 0.5em 1em;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="abc">
+        <h1>PLAY GAME</h1>
+        <a href="http://127.0.0.1:5502/memoryGame/hack1.html">
+            <button>Get start</button>
+        </a>
+    </div>
+    <script src="hack.js"></script>
+</body>
+</html>
+
+
+
+
